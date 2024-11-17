@@ -30,7 +30,7 @@
       </div>
       <!-- Authentication Links -->
       <div class="d-flex">
-        <router-link to="/login" class="btn btn-primary">Login</router-link>
+        <router-link to="/login" class="btn btn-primary me-2">Login</router-link>
         <router-link to="/register" class="btn btn-primary">Register</router-link>
       </div>
     </div>
