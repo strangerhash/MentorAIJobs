@@ -16,7 +16,6 @@ export default {};
   padding: 5rem 1rem;
   color: white;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
   text-align: center;
 }
 .hero-title {

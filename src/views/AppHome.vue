@@ -52,7 +52,7 @@ export default {
       premiumPlans: [
         {
           title: "Basic Plan",
-          price: "$19/month",
+          price: "799 INR/month",
           features: [
             { name: "Resume Analyzer", included: true },
             { name: "Skill Assessment", included: false },
@@ -62,7 +62,7 @@ export default {
         },
         {
           title: "Pro Plan",
-          price: "$49/month",
+          price: "999 INR/month",
           features: [
             { name: "Resume Analyzer", included: true },
             { name: "Skill Assessment", included: true },
@@ -72,7 +72,7 @@ export default {
         },
         {
           title: "Enterprise Plan",
-          price: "$149/month",
+          price: "1299 INR/month",
           features: [
             { name: "Resume Analyzer", included: true },
             { name: "Skill Assessment", included: true },
