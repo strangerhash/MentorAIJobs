@@ -1,19 +1,38 @@
 <template>
   <div id="app">
-    <Navbar />
+    <component :is="currentNavbar" />
     <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-import Navbar from "./components/AppNavbar.vue";
+import AdminNavbar from "./components/admin/AdminNavBar.vue";
+import UserNavbar from "./components/users/UserNavBar.vue";
 import Footer from "./components/AppFooter.vue";
+import AppNavbar from "./components/AppNavbar.vue";
 
 export default {
   components: {
-    Navbar,
+    AdminNavbar,
+    UserNavbar,
     Footer,
+    AppNavbar
+
+  },
+  computed: {
+    currentNavbar() {
+      const userRole = localStorage.getItem("role"); // Replace with a secure API call
+      if (userRole === "admin") {
+        return "AdminNavbar";
+      }
+      else if (userRole === "user") {
+        return "UserNavbar"
+      }
+      else {
+        return "AppNavbar";
+      }
+    },
   },
 };
 </script>

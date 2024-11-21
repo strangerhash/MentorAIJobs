@@ -26,6 +26,9 @@
   </template>
   
   <script>
+  // import axios from '../api/axios';
+
+
   export default {
     data() {
       return {
@@ -34,9 +37,31 @@
       };
     },
     methods: {
-      handleLogin() {
+      async handleLogin() {
         // Handle the login logic here
         console.log('Logging in with:', this.email, this.password);
+
+        try {
+        // const response = await axios.post('/auth/login', {
+        //   email: this.email,
+        //   password: this.password,
+        // });
+        const { token, role } = { token: "asdfsdfsdfsdf", role: "admin" };
+
+        // const { token, role } = {"asdfsdfsdfsdf",'admin'}
+        //  response.data;
+        localStorage.setItem('token', token);
+        localStorage.setItem('role', role);
+
+        // Redirect based on role
+        if (role === 'admin') {
+          this.$router.push('/admin-dashboard');
+        } else {
+          this.$router.push('/user-dashboard');
+        }
+      } catch (err) {
+        this.error = 'Invalid credentials. Please try again.';
+      }
       },
     },
   };

@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "The Rise of AI in Everyday Life",
+      "author": "John Doe",
+      "date": "2024-11-21",
+      "content": "Artificial Intelligence (AI) is becoming a crucial part of our daily routines...",
+      "category": "Technology",
+      "image": "ai-rise.jpg"
+    },
+    {
+      "id": 2,
+      "title": "10 Tips for Becoming a Successful Developer",
+      "author": "Jane Smith",
+      "date": "2024-11-18",
+      "content": "Becoming a developer is not just about coding. It requires a mix of skills and perseverance...",
+      "category": "Career",
+      "image": "developer-tips.jpg"
+    },
+    {
+        "id": 3,
+        "title": "10 Tips for Becoming a Successful Developer",
+        "author": "Jane Smith",
+        "date": "2024-11-18",
+        "content": "Becoming a developer is not just about coding. It requires a mix of skills and perseverance...",
+        "category": "Career",
+        "image": "developer-tips.jpg"
+      }
+  ]
+  

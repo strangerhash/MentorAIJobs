@@ -26,6 +26,9 @@
           <li class="nav-item">
             <router-link to="/ai-assessment" class="nav-link">AI Skill Assessment</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/blogs" class="nav-link">Blogs</router-link>
+          </li>
         </ul>
       </div>
       <!-- Authentication Links -->
@@ -58,8 +61,8 @@ export default {};
 }
 
 .navbar .navbar-toggler {
-  background-color: #fff;
-  border: 2px solid #ff6a00;
+  background-color: #dd5252;
+  border: 2px solid none;
   border-radius: 50px;
 }
 
